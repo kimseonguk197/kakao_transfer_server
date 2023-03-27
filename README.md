@@ -20,7 +20,7 @@ java -jar remittance-0.0.1-SNAPSHOT.jar
 초기 필요 데이터(user객체, 환율정보)는 dataseeding 컴포넌트를 통해 자동생성
 ##  주요 process
 * 예상비용 및 환율조회 -> 송금정보 validation -> 1. 계좌잔고 여부 2. 5천불이상 여부 3. 지정외국환 여부 4. 5만불 이상 등 check -> 수신자정보 입력 -> 송금 실행(계좌잔액 수정 및 통계금액 가산)
-# 주요 API
+##  주요 API
 * 예상비용 및 환율조회(수수료, 적용환율, 총예상비용) : /exchange/total
 * 송금실행 : /transfer/create
 * 최근3개월 송금내역 조회 : /user/mytransfers?userEmail=
